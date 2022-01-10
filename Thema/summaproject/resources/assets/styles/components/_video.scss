@@ -1,0 +1,41 @@
+.videoblock {
+  background-color: lightgrey;
+  width: 100%;
+  padding: 2em;
+
+  .textcontainer {
+    margin: 1em auto 2em auto;
+    text-align: center;
+    text-transform: uppercase;
+
+    h1 {
+      font-weight: 600;
+    }
+  }
+
+  .videocontainer {
+    margin: auto;
+    width: 100%;
+    max-width: 1200px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .videoblock {
+    .videocontainer {
+      iframe {
+        height: 400px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .videoblock {
+    .videocontainer {
+      iframe {
+        height: 300px;
+      }
+    }
+  }
+}
